@@ -1,0 +1,7 @@
+ansible --list-hosts all
+ansible --list-hosts "*"
+ansible --list-hosts loadbalancer
+ansible --list-hosts db01
+ansible --list-hosts "app0*"
+ansible --list-hosts \!control
+

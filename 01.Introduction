@@ -1,0 +1,27 @@
+ansible --version
+ansible-playbook --version
+ansible --list-hosts all
+vi /etc/ansible/hosts
+
+[loadbalancer]
+lb01
+
+[webserver]
+app01
+app02
+
+[database]
+db01
+
+[control]
+control ansible-connection=local
+
+ansible --list-host all
+
+cd ansible
+#delete and give the details in this file
+vi /etc/ansible/ansible.cfg
+[defaults]
+inventory=./dev
+
+ansible --list-hosts all
